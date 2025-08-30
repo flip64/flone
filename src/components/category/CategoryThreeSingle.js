@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const CategoryThreeSingle = ({ data }) => {
@@ -6,7 +6,7 @@ const CategoryThreeSingle = ({ data }) => {
   return (
     <div className="collection-product">
       <div className="collection-img">
-        <Link to={process.env.PUBLIC_URL + data.link}>
+        <Link to={process.env.PUBLIC_URL +"/categories/"+data.slug }>
           <img src={process.env.PUBLIC_URL + data.image} alt="" />
         </Link>
       </div>
@@ -31,6 +31,7 @@ CategoryThreeSingle.propTypes = {
 };
 
 export default CategoryThreeSingle;
+
 
 
 
