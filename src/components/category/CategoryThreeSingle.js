@@ -1,4 +1,4 @@
-,import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const CategoryThreeSingle = ({ data }) => {
@@ -31,6 +31,7 @@ CategoryThreeSingle.propTypes = {
 };
 
 export default CategoryThreeSingle;
+
 
 
 
