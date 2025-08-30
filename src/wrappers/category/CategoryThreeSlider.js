@@ -19,9 +19,10 @@ const settings = {
 
 const CategoryThreeSlider = ({ spaceTopClass, spaceBottomClass }) => {
   const [categories, setCategories] = useState([]);
-
+   
   useEffect(() => {
-    fetch(`products/categories/`) // اینجا آدرس API خودت رو بذار
+    fetch(`${BASEURL}products/categories/`) // اینجا آدرس API خودت رو بذار
+
       .then((res) => res.json())
       .then((data) => setCategories(data))
       .catch((err) => console.error("خطا در گرفتن دسته‌بندی‌ها:", err));
