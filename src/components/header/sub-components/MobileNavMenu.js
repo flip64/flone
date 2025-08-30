@@ -15,76 +15,14 @@ const MobileNavMenu = () => {
                 {t("home_group_one")}
               </Link>
               <ul className="sub-menu">
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-fashion"}>
-                    {t("home_fashion")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-fashion-two"}>
-                    {t("home_fashion_two")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-fashion-three"}>
-                    {t("home_fashion_three")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-fashion-four"}>
-                    {t("home_fashion_four")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-fashion-five"}>
-                    {t("home_fashion_five")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-fashion-six"}>
-                    {t("home_fashion_six")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-fashion-seven"}>
-                    {t("home_fashion_seven")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-fashion-eight"}>
-                    {t("home_fashion_eight")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-kids-fashion"}>
-                    {t("home_kids_fashion")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-cosmetics"}>
-                    {t("home_cosmetics")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-furniture"}>
-                    {t("home_furniture")}
-                  </Link>
-                </li>
+                
+                
                 <li>
                   <Link to={process.env.PUBLIC_URL + "/home-furniture-two"}>
                     {t("home_furniture_two")}
                   </Link>
                 </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-furniture-three"}>
-                    {t("home_furniture_three")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-furniture-four"}>
-                    {t("home_furniture_four")}
-                  </Link>
-                </li>
+                
               </ul>
             </li>
             <li className="menu-item-has-children">
@@ -339,5 +277,6 @@ const MobileNavMenu = () => {
 };
 
 export default MobileNavMenu;
+
 
 
