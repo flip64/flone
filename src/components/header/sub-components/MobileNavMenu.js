@@ -22,6 +22,19 @@ const MobileNavMenu = () => {
                     {t("home_furniture_two")}
                   </Link>
                 </li>
+                <li>
+                    <Link to={process.env.PUBLIC_URL + "/home-electronics-two"}>
+                      {t("home_electronics_two")}
+                    </Link>
+                  </li>
+
+                <li>
+                    <Link
+                      to={process.env.PUBLIC_URL + "/home-electronics-three"}
+                    >
+                      {t("home_electronics_three")}
+                    </Link>
+                  </li>
                 
               </ul>
             </li>
@@ -236,6 +249,7 @@ const MobileNavMenu = () => {
 };
 
 export default MobileNavMenu;
+
 
 
 
