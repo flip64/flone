@@ -33,40 +33,22 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
                       {t("home_group_one")}
                     </Link>
                   </li>
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "/home-fashion"}>
-                      {t("home_fashion")}
+                 
+                 <li>
+                    <Link to={process.env.PUBLIC_URL + "/home-electronics-two"}>
+                      {t("home_electronics_two")}
                     </Link>
                   </li>
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "/home-fashion-two"}>
-                      {t("home_fashion_two")}
+
+                     <li>
+                    <Link
+                      to={process.env.PUBLIC_URL + "/home-electronics-three"}
+                    >
+                      {t("home_electronics_three")}
                     </Link>
                   </li>
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "/home-fashion-three"}>
-                      {t("home_fashion_three")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "/home-fashion-four"}>
-                      {t("home_fashion_four")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "/home-fashion-five"}>
-                      {t("home_fashion_five")}
-                    </Link>
-                  </li>
-               
-             
+
             
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "/home-kids-fashion"}>
-                      {t("home_kids_fashion")}
-                    </Link>
-                  </li>
-           
                   <li>
                     <Link to={process.env.PUBLIC_URL + "/home-furniture-two"}>
                       {t("home_furniture_two")}
@@ -76,62 +58,8 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
              
                 </ul>
               </li>
-              <li>
-                <ul>
-                  <li className="mega-menu-title">
-                    <Link to={process.env.PUBLIC_URL + "/"}>
-                      {t("home_group_two")}
-                    </Link>
-                  </li>
-            
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "/home-electronics-two"}>
-                      {t("home_electronics_two")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to={process.env.PUBLIC_URL + "/home-electronics-three"}
-                    >
-                      {t("home_electronics_three")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "/home-book-store"}>
-                      {t("home_book_store")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "/home-book-store-two"}>
-                      {t("home_book_store_two")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "/home-plants"}>
-                      {t("home_plants")}
-                    </Link>
-                  </li>
-                  
-                  
-                </ul>
-              </li>
-              <li>
-                <ul>
-                  <li className="mega-menu-title">
-                    <Link to={process.env.PUBLIC_URL + "/"}>
-                      {t("home_group_three")}
-                    </Link>
-                  </li>
-                
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "/home-handmade"}>
-                      {t("home_handmade")}
-                    </Link>
-                  </li>
-               
-              
-                </ul>
-              </li>
+           
+    
             </ul>
           </li>
           <li>
@@ -357,11 +285,7 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
                   {t("blog_standard")}
                 </Link>
               </li>
-              <li>
-                <Link to={process.env.PUBLIC_URL + "/blog-no-sidebar"}>
-                  {t("blog_no_sidebar")}
-                </Link>
-              </li>
+       
               <li>
                 <Link to={process.env.PUBLIC_URL + "/blog-right-sidebar"}>
                   {t("blog_right_sidebar")}

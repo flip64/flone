@@ -3,10 +3,6 @@ import ScrollToTop from "./helpers/scroll-top";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // home pages
-const HomeFashion = lazy(() => import("./pages/home/HomeFashion"));
-const HomeFashionFour = lazy(() => import("./pages/home/HomeFashionFour"));
-const HomeFashionFive = lazy(() => import("./pages/home/HomeFashionFive"));
-const HomeKidsFashion = lazy(() => import("./pages/home/HomeKidsFashion"));
 const HomeFurnitureTwo = lazy(() => import("./pages/home/HomeFurnitureTwo"));
 const HomeElectronicsTwo = lazy(() =>
   import("./pages/home/HomeElectronicsTwo")
@@ -14,10 +10,7 @@ const HomeElectronicsTwo = lazy(() =>
 const HomeElectronicsThree = lazy(() =>
   import("./pages/home/HomeElectronicsThree")
 );
-const HomeBookStore = lazy(() => import("./pages/home/HomeBookStore"));
-const HomeBookStoreTwo = lazy(() => import("./pages/home/HomeBookStoreTwo"));
-const HomePlants = lazy(() => import("./pages/home/HomePlants"));
-const HomeHandmade = lazy(() => import("./pages/home/HomeHandmade"));
+
 
 
 
@@ -37,9 +30,7 @@ const ShopListTwoColumn = lazy(() => import("./pages/shop/ShopListTwoColumn"));
 
 // product pages
 const Product = lazy(() => import("./pages/shop-product/Product"));
-const ProductTabLeft = lazy(() =>
-  import("./pages/shop-product/ProductTabLeft")
-);
+
 const ProductTabRight = lazy(() =>
   import("./pages/shop-product/ProductTabRight")
 );
@@ -51,10 +42,8 @@ const ProductFixedImage = lazy(() =>
 
 // blog pages
 const BlogStandard = lazy(() => import("./pages/blog/BlogStandard"));
-const BlogNoSidebar = lazy(() => import("./pages/blog/BlogNoSidebar"));
-const BlogRightSidebar = lazy(() => import("./pages/blog/BlogRightSidebar"));
 const BlogDetailsStandard = lazy(() =>
-  import("./pages/blog/BlogDetailsStandard")
+ import("./pages/blog/BlogDetailsStandard")
 );
 
 // other pages
@@ -81,35 +70,15 @@ const App = () => {
                   <span>4545787</span>
                   <span>4545</span>
                 </div>
+
               </div>
             }
           >
             <Routes>
-              <Route
-                path={process.env.PUBLIC_URL + "/"}
-                element={<HomeFashion/>}
-              />
-
-              {/* Homepages */}
-              <Route
-                path={process.env.PUBLIC_URL + "/home-fashion"}
-                element={<HomeFashion/>}
-              />
-              <Route
-                path={process.env.PUBLIC_URL + "/home-fashion-four"}
-                element={<HomeFashionFour/>}
-              />
-              <Route
-                path={process.env.PUBLIC_URL + "/home-fashion-five"}
-                element={<HomeFashionFive/>}
-              />
-         
-             
-              <Route
-                path={process.env.PUBLIC_URL + "/home-kids-fashion"}
-                element={<HomeKidsFashion/>}
-              />
            
+              {/* Homepages */}
+            
+          
            
               <Route
                 path={process.env.PUBLIC_URL + "/home-furniture-two"}
@@ -124,24 +93,9 @@ const App = () => {
                 path={process.env.PUBLIC_URL + "/home-electronics-three"}
                 element={<HomeElectronicsThree/>}
               />
-              <Route
-                path={process.env.PUBLIC_URL + "/home-book-store"}
-                element={<HomeBookStore/>}
-              />
-              <Route
-                path={process.env.PUBLIC_URL + "/home-book-store-two"}
-                element={<HomeBookStoreTwo/>}
-              />
-              <Route
-                path={process.env.PUBLIC_URL + "/home-plants"}
-                element={<HomePlants/>}
-              />
              
-              <Route
-                path={process.env.PUBLIC_URL + "/home-handmade"}
-                element={<HomeHandmade/>}
-              />
-             
+         
+            
              
 
               {/* Shop pages */}
@@ -187,10 +141,7 @@ const App = () => {
                 path={process.env.PUBLIC_URL + "/product/:id"}
                 element={<Product />}
               />
-              <Route
-                path={process.env.PUBLIC_URL + "/product-tab-left/:id"}
-                element={<ProductTabLeft/>}
-              />
+         
               <Route
                 path={process.env.PUBLIC_URL + "/product-tab-right/:id"}
                 element={<ProductTabRight/>}
@@ -213,15 +164,7 @@ const App = () => {
                 path={process.env.PUBLIC_URL + "/blog-standard"}
                 element={<BlogStandard/>}
               />
-              <Route
-                path={process.env.PUBLIC_URL + "/blog-no-sidebar"}
-                element={<BlogNoSidebar/>}
-              />
-              <Route
-                path={process.env.PUBLIC_URL + "/blog-right-sidebar"}
-                element={<BlogRightSidebar/>}
-              />
-              <Route
+             <Route
                 path={process.env.PUBLIC_URL + "/blog-details-standard"}
                 element={<BlogDetailsStandard/>}
               /> 
