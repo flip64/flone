@@ -92,51 +92,16 @@ const MobileNavMenu = () => {
                 {t("home_group_two")}
               </Link>
               <ul className="sub-menu">
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-furniture-five"}>
-                    {t("home_furniture_five")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-furniture-six"}>
-                    {t("home_furniture_six")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-furniture-seven"}>
-                    {t("home_furniture_seven")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-electronics"}>
-                    {t("home_electronics")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-electronics-two"}>
-                    {t("home_electronics_two")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-electronics-three"}>
-                    {t("home_electronics_three")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-book-store"}>
-                    {t("home_book_store")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-book-store-two"}>
-                    {t("home_book_store_two")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-plants"}>
-                    {t("home_plants")}
-                  </Link>
-                </li>
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
                 <li>
                   <Link to={process.env.PUBLIC_URL + "/home-flower-shop"}>
                     {t("home_flower_shop")}
@@ -430,3 +395,4 @@ const MobileNavMenu = () => {
 };
 
 export default MobileNavMenu;
+
