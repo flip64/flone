@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const CategoryThreeSingle = ({ data }) => {
+  console.log(data)
   return (
     <div className="collection-product">
       <div className="collection-img">
@@ -30,3 +31,4 @@ CategoryThreeSingle.propTypes = {
 };
 
 export default CategoryThreeSingle;
+
