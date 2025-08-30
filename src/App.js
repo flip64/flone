@@ -80,7 +80,7 @@ const App = () => {
               {/* Homepages */}
                <Route
                  path={process.env.PUBLIC_URL + "/"}
-                 element={<HomeFurnitureTwo/>}
+                 element={<HomeElectronicsTwo/>}
                />
           
            
@@ -218,3 +218,4 @@ const App = () => {
 
 
 export default App;
+
