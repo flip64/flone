@@ -13,10 +13,10 @@ const CategoryThreeSingle = ({ data }) => {
       <div className="collection-content text-center">
         <span>{data.subtitle}</span>
         <h4>
-          <Link to={process.env.PUBLIC_URL + "/"+data.slug}>{data.name}</Link>
+          <Link to={process.env.PUBLIC_URL + "/categories/"+data.slug}>{data.name}</Link>
         </h4>
         <Link
-          to={process.env.PUBLIC_URL + data.link}
+          to={process.env.PUBLIC_URL +"/categories/"+data.slugdata.name} }
           className="collection-btn"
         >
           SHOP NOW
@@ -31,6 +31,7 @@ CategoryThreeSingle.propTypes = {
 };
 
 export default CategoryThreeSingle;
+
 
 
 
