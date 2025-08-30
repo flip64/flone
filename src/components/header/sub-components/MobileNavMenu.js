@@ -11,15 +11,15 @@ const MobileNavMenu = () => {
           <Link to={process.env.PUBLIC_URL + "/"}>{t("home")}</Link>
           <ul className="sub-menu">
           <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-furniture-two"}>
+            <Link to={process.env.PUBLIC_URL + "/home-furniture-two"}>
                     {t("home_furniture_two")}
-                  </Link>
-                </li>
-                <li>
+            </Link>
+           </li>
+           <li>
                     <Link to={process.env.PUBLIC_URL + "/home-electronics-two"}>
                       {t("home_electronics_two")}
                     </Link>
-                  </li>
+           </li>
 
                 <li>
                     <Link
@@ -27,40 +27,7 @@ const MobileNavMenu = () => {
                     >
                       {t("home_electronics_three")}
                     </Link>
-                  </li>
-                                                     
-                                                     
-            <li className="menu-item-has-children">
-            
-  
-  
-            <Link to={process.env.PUBLIC_URL + "/"}>
-                {t("home_group_one")}
-              </Link>
-              <ul className="sub-menu">
-                
-                
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-furniture-two"}>
-                    {t("home_furniture_two")}
-                  </Link>
-                </li>
-                <li>
-                    <Link to={process.env.PUBLIC_URL + "/home-electronics-two"}>
-                      {t("home_electronics_two")}
-                    </Link>
-                  </li>
-
-                <li>
-                    <Link
-                      to={process.env.PUBLIC_URL + "/home-electronics-three"}
-                    >
-                      {t("home_electronics_three")}
-                    </Link>
-                  </li>
-                
-              </ul>
-            </li>
+               </li>
             
             
           </ul>
@@ -272,6 +239,7 @@ const MobileNavMenu = () => {
 };
 
 export default MobileNavMenu;
+
 
 
 
