@@ -25,48 +25,7 @@ const MobileNavMenu = () => {
                 
               </ul>
             </li>
-            <li className="menu-item-has-children">
-              <Link to={process.env.PUBLIC_URL + "/"}>
-                {t("home_group_two")}
-              </Link>
-              <ul className="sub-menu">
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-flower-shop"}>
-                    {t("home_flower_shop")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-flower-shop-two"}>
-                    {t("home_flower_shop_two")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-organic-food"}>
-                    {t("home_organic_food")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-organic-food-two"}>
-                    {t("home_organic_food_two")}
-                  </Link>
-                </li>
-                <li>
-                  <Link to={process.env.PUBLIC_URL + "/home-onepage-scroll"}>
-                    {t("home_onepage_scroll")}
-                  </Link>
-                </li>
-              </ul>
-            </li>
+            
             
           </ul>
         </li>
@@ -277,6 +236,7 @@ const MobileNavMenu = () => {
 };
 
 export default MobileNavMenu;
+
 
 
 
