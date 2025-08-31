@@ -14,54 +14,11 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
     >
       <nav>
         <ul>
-          <li>
-            <Link to={process.env.PUBLIC_URL + "/"}>
-              {t("home")}
-              {sidebarMenu ? (
-                <span>
-                  <i className="fa fa-angle-right"></i>
-                </span>
-              ) : (
-                <i className="fa fa-angle-down" />
-              )}
-            </Link>
-            <ul className="mega-menu mega-menu-padding">
-              <li>
-                <ul>
-                  <li className="mega-menu-title">
-                    <Link to={process.env.PUBLIC_URL + "/"}>
-                      {t("home_group_one")}
-                    </Link>
-                  </li>
-                 
-                 <li>
-                    <Link to={process.env.PUBLIC_URL + "/home-electronics-two"}>
-                      {t("home_electronics_two")}
-                    </Link>
-                  </li>
-
-                     <li>
-                    <Link
-                      to={process.env.PUBLIC_URL + "/home-electronics-three"}
-                    >
-                      {t("home_electronics_three")}
-                    </Link>
-                  </li>
-
-            
                   <li>
-                    <Link to={process.env.PUBLIC_URL + "/home-furniture-two"}>
-                      {t("home_furniture_two")}
+                    <Link to={process.env.PUBLIC_URL + "/home"}>
+                      {t("home")}
                     </Link>
                   </li>
-                
-             
-                </ul>
-              </li>
-           
-    
-            </ul>
-          </li>
           <li>
             <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
               {" "}
@@ -87,48 +44,13 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
                       {t("shop_grid_standard")}
                     </Link>
                   </li>
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "/shop-grid-filter"}>
-                      {t("shop_grid_filter")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "/shop-grid-two-column"}>
-                      {t("shop_grid_two_column")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "/shop-grid-no-sidebar"}>
-                      {t("shop_grid_no_sidebar")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "/shop-grid-full-width"}>
-                      {t("shop_grid_full_width")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to={process.env.PUBLIC_URL + "/shop-grid-right-sidebar"}
-                    >
-                      {t("shop_grid_right_sidebar")}
-                    </Link>
-                  </li>
+                 
                   <li>
                     <Link to={process.env.PUBLIC_URL + "/shop-list-standard"}>
                       {t("shop_list_standard")}
                     </Link>
                   </li>
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "/shop-list-full-width"}>
-                      {t("shop_list_full_width")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={process.env.PUBLIC_URL + "/shop-list-two-column"}>
-                      {t("shop_list_two_column")}
-                    </Link>
-                  </li>
+
                 </ul>
               </li>
               <li>

@@ -7,7 +7,7 @@ const CategoryThreeSingle = ({ data }) => {
     <div className="collection-product">
       <div className="collection-img">
         <Link to={process.env.PUBLIC_URL +"/categories/"+data.slug }>
-          <img src={process.env.PUBLIC_URL + data.image} alt= {data.name} />
+          <img   width="270" height="280" src={process.env.PUBLIC_URL + data.image} alt= {data.name} />
         </Link>
       </div>
       <div className="collection-content text-center">
