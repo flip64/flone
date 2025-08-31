@@ -33,13 +33,13 @@ const ProductGridSingle = ({
           <Link to={process.env.PUBLIC_URL + "/product/" + product.id}>
             <img
               className="default-img"
-              src={process.env.PUBLIC_URL + product.image[0]}
+              src={process.env.PUBLIC_URL + product.image[0].image}
               alt=""
             />
             {product.image.length > 1 ? (
               <img
                 className="hover-img"
-                src={process.env.PUBLIC_URL + product.image[1]}
+                src={process.env.PUBLIC_URL + product.image[1].image}
                 alt=""
               />
             ) : (
@@ -174,6 +174,7 @@ ProductGridSingle.propTypes = {
 };
 
 export default ProductGridSingle;
+
 
 
 
