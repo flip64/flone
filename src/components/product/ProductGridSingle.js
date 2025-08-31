@@ -17,17 +17,16 @@ const ProductGridSingle = ({
   compareItem,
   spaceBottomClass
 }) => {
-  
+  console.log("56", proudoct)
   const [modalShow, setModalShow] = useState(false);
-  const discountedPrice = getDiscountPrice(product.price, product.discount);
-  const finalProductPrice = +(product.price * currency.currencyRate).toFixed(2);
+  const discountedPrice = getDiscountPrice(product.base_price, product.discount);
+  const finalProductPrice = +(product.base_price * currency.currencyRate).toFixed(2);
   const finalDiscountedPrice = +(
     discountedPrice * currency.currencyRate
   ).toFixed(2);
   const dispatch = useDispatch();
 
   return (
-    console.log("56",product)
     <Fragment>
       <div className={clsx("product-wrap", spaceBottomClass)}>
         <div className="product-img">
@@ -175,5 +174,6 @@ ProductGridSingle.propTypes = {
 };
 
 export default ProductGridSingle;
+
 
 
