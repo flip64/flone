@@ -17,7 +17,7 @@ const ProductGridSingle = ({
   compareItem,
   spaceBottomClass
 }) => {
-  console.log("56", proudoct)
+  console.log("56", product)
   const [modalShow, setModalShow] = useState(false);
   const discountedPrice = getDiscountPrice(product.base_price, product.discount);
   const finalProductPrice = +(product.base_price * currency.currencyRate).toFixed(2);
@@ -174,6 +174,7 @@ ProductGridSingle.propTypes = {
 };
 
 export default ProductGridSingle;
+
 
 
 
