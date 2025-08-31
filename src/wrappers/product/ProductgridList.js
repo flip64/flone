@@ -15,6 +15,7 @@ const ProductGridList = ({
   return (
     <Fragment>
       {products?.map(product => {
+        console.log("id",product.id)
         return (
           <div className="col-xl-4 col-sm-6" key={product.id}>
             <ProductGridListSingle
@@ -48,5 +49,6 @@ ProductGridList.propTypes = {
 };
 
 export default ProductGridList;
+
 
 
