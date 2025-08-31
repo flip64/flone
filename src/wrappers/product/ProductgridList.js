@@ -11,7 +11,7 @@ const ProductGridList = ({
   const { cartItems } = useSelector((state) => state.cart);
   const { wishlistItems } = useSelector((state) => state.wishlist);
   const { compareItems } = useSelector((state) => state.compare);
-  console.log("ok" ,products)
+  
   return (
     <Fragment>
       {products?.map(product => {
@@ -48,6 +48,7 @@ ProductGridList.propTypes = {
 };
 
 export default ProductGridList;
+
 
 
 
