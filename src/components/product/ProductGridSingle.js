@@ -17,14 +17,25 @@ const ProductGridSingle = ({
   compareItem,
   spaceBottomClass
 }) => {
-  console.log("56", product)
   const [modalShow, setModalShow] = useState(false);
+  const dispatch = useDispatch();
+
   const discountedPrice = getDiscountPrice(product.base_price, product.discount);
   const finalProductPrice = +(product.base_price * currency.currencyRate).toFixed(2);
-  const finalDiscountedPrice = +(
-    discountedPrice * currency.currencyRate
-  ).toFixed(2);
-  const dispatch = useDispatch();
+  const finalDiscountedPrice = discountedPrice
+    ? +(discountedPrice * currency.currencyRate).toFixed(2)
+    : null;
+
+  // تصویر اصلی و hover image امن
+  const mainImage =
+    product.images && product.images.length > 0
+      ? product.images[0].image
+      : "/placeholder.png";
+
+  const hoverImage =
+    product.images && product.images.length > 1
+      ? product.images[1].image
+      : null;
 
   return (
     <Fragment>
@@ -33,31 +44,26 @@ const ProductGridSingle = ({
           <Link to={process.env.PUBLIC_URL + "/product/" + product.id}>
             <img
               className="default-img"
-              src={process.env.PUBLIC_URL + product.image[0].image}
-              alt=""
+              src={mainImage}
+              alt={product.images && product.images[0]?.alt_text ? product.images[0].alt_text : product.name}
             />
-            {product.image.length > 1 ? (
+            {hoverImage && (
               <img
                 className="hover-img"
-                src={process.env.PUBLIC_URL + product.image[1].image}
-                alt=""
+                src={hoverImage}
+                alt={product.images[1]?.alt_text || product.name}
               />
-            ) : (
-              ""
             )}
           </Link>
+
           {product.discount || product.new ? (
             <div className="product-img-badges">
               {product.discount ? (
                 <span className="pink">-{product.discount}%</span>
-              ) : (
-                ""
-              )}
-              {product.new ? <span className="purple">New</span> : ""}
+              ) : null}
+              {product.new ? <span className="purple">New</span> : null}
             </div>
-          ) : (
-            ""
-          )}
+          ) : null}
 
           <div className="product-action">
             <div className="pro-same-action pro-wishlist">
@@ -74,6 +80,7 @@ const ProductGridSingle = ({
                 <i className="pe-7s-like" />
               </button>
             </div>
+
             <div className="pro-same-action pro-cart">
               {product.affiliateLink ? (
                 <a
@@ -81,8 +88,7 @@ const ProductGridSingle = ({
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  {" "}
-                  Buy now{" "}
+                  Buy now
                 </a>
               ) : product.variation && product.variation.length >= 1 ? (
                 <Link to={`${process.env.PUBLIC_URL}/product/${product.id}`}>
@@ -101,7 +107,6 @@ const ProductGridSingle = ({
                     cartItem !== undefined ? "Added to cart" : "Add to cart"
                   }
                 >
-                  {" "}
                   <i className="pe-7s-cart"></i>{" "}
                   {cartItem !== undefined && cartItem.quantity > 0
                     ? "Added"
@@ -113,6 +118,7 @@ const ProductGridSingle = ({
                 </button>
               )}
             </div>
+
             <div className="pro-same-action pro-quickview">
               <button title="Quick View" onClick={() => setModalShow(true)}>
                 <i className="pe-7s-look" />
@@ -120,6 +126,7 @@ const ProductGridSingle = ({
             </div>
           </div>
         </div>
+
         <div className="product-content text-center">
           <h3>
             <Link to={process.env.PUBLIC_URL + "/product/" + product.id}>
@@ -130,11 +137,9 @@ const ProductGridSingle = ({
             <div className="product-rating">
               <Rating ratingValue={product.rating} />
             </div>
-          ) : (
-            ""
-          )}
+          ) : null}
           <div className="product-price">
-            {discountedPrice !== null ? (
+            {finalDiscountedPrice !== null ? (
               <Fragment>
                 <span>{currency.currencySymbol + finalDiscountedPrice}</span>{" "}
                 <span className="old">
@@ -142,11 +147,12 @@ const ProductGridSingle = ({
                 </span>
               </Fragment>
             ) : (
-              <span>{currency.currencySymbol + finalProductPrice} </span>
+              <span>{currency.currencySymbol + finalProductPrice}</span>
             )}
           </div>
         </div>
       </div>
+
       {/* product modal */}
       <ProductModal
         show={modalShow}
@@ -174,7 +180,6 @@ ProductGridSingle.propTypes = {
 };
 
 export default ProductGridSingle;
-
 
 
 
